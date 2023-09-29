@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+	{
+		path: '', loadChildren: () => import('./log/log.module').then(m => m.LogModule)
+	}
+];
 
 @NgModule({
   	imports: [RouterModule.forRoot(routes)],
