@@ -29,4 +29,12 @@ export class AuthService {
         return false;
     }
   }
+
+  getUsuarioLogueado(){
+    return this.authService.authState;
+  }
+
+  logOut(){
+    this.authService.signOut;
+  }
 }

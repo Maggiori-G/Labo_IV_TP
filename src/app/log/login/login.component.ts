@@ -25,7 +25,7 @@ export class LoginComponent {
         this.authService.login(email, password).then((res) => {
             console.log('logueado: ', res);
             if(res){
-                this.router.navigateByUrl('home')
+                this.router.navigateByUrl('menu')
             }
             else{
                 console.error('no entra')

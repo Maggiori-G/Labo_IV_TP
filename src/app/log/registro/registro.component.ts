@@ -21,7 +21,7 @@ export class RegistroComponent {
         this.authService.register(email, password).then((res) => {
             console.log('logueado: ', res);
             if(res){
-                this.router.navigateByUrl('home')
+                this.router.navigateByUrl('menu')
             }
             else{
                 console.error('no entra')
