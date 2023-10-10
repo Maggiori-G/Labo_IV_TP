@@ -18,6 +18,12 @@ const routes: Routes = [
       },
       {
         path: 'preguntados',  loadChildren: () => import('../juegos/preguntados/preguntados.module').then(m=> m.PreguntadosModule)
+      },
+      {
+        path: 'about', loadChildren: () => import('./about/about.module').then(m=> m.AboutModule)
+      },
+      {
+        path: 'chat', loadChildren: () => import('./chat/chat.module').then(m=>m.ChatModule)
       }
     ]
   }
