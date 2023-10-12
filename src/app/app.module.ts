@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/Environment/environment';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -18,10 +19,11 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
         AppRoutingModule,
         FormsModule,
         AngularFireModule.initializeApp(environment.firebaseConfig),
-        PrimeNgModule
+        PrimeNgModule,
+        HttpClientModule
     ],
 	providers: [
-
+        
     ],
 	bootstrap: [
         AppComponent

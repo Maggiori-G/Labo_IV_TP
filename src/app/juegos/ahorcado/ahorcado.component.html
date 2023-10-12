@@ -1,1 +1,48 @@
-<p>ahorcado works!</p>
+<div class="contenedor" *ngIf="palabra">
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="text-primary">Juego del Ahorcado</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center">
+      <img
+        src="assets/ahorcadoAssets/{{intentos}}.png"
+        class="ahorcado-img"
+      />
+      <h3>Intentos: <small>{{intentos}} / 9 </small></h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center">
+      <h1>{{palabraOculta}}</h1>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="!gano && !perdio">
+    <div class="col text-center">
+      <button
+        (click)="comprobar(letra)"
+        *ngFor="let letra of letras"
+        class="btn btn-primary"
+      >
+        {{letra.toUpperCase()}}
+      </button>
+    </div>
+  </div>
+  <div class="row" *ngIf="gano">
+    <div class="col text-center">
+      <h1 class="text-success">Felicidades! Ganaste!!!</h1>
+    </div>
+  </div>
+  <div class="row" *ngIf="perdio">
+    <div class="col text-center">
+      <h3 class="text-danger">¡Has perdido!</h3>
+      <h4 class="text-success">La palabra correcta era: {{palabra}}</h4>
+    </div>
+  </div>
+</div>
+
+
