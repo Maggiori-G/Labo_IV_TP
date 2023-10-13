@@ -7,3 +7,9 @@ div {
     margin-left: 5px;
   }
   
+  .botones{
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+    width: 45px;
+  }

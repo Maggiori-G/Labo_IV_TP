@@ -41,14 +41,14 @@ export class AhorcadoComponent implements OnInit {
     "w",
     "x",
     "y",
-    "z"
+    "z",
   ];
   constructor(private palabraService: PalabraService) { }
 
   ngOnInit(): void {
-      this.getPalabra();
+    this.getPalabra();
+      
   }
-
 
   getPalabra(){
     this.corriendo = this.palabraService.getPalabra()
@@ -64,13 +64,29 @@ export class AhorcadoComponent implements OnInit {
     const palabraOcultaArreglo = this.palabraOculta.split(" ");
 
     for (let i = 0; i <= this.palabra.length; i++) {
-      if (this.palabra[i] === letra) {
+      if (this.palabra[i] === 'á') {
+        palabraOcultaArreglo[i] = 'á';
+      }
+      else if(this.palabra[i] === 'é'){
+        palabraOcultaArreglo[i] = 'é';
+      }
+      else if(this.palabra[i] === 'í'){
+        palabraOcultaArreglo[i] = 'í';
+      }
+      else if(this.palabra[i] === 'ó'){
+        palabraOcultaArreglo[i] = 'ó';
+      }
+      else if(this.palabra[i] === 'ú'){
+        palabraOcultaArreglo[i] = 'ú';
+      }
+      else if(this.palabra[i] === letra){
         palabraOcultaArreglo[i] = letra;
       }
     }
     this.palabraOculta = palabraOcultaArreglo.join(" ");
     this.verificaGanador();
   }
+
   verificaGanador() {
     const palabraArr = this.palabraOculta.split(" ");
     const palabraEvaluar = palabraArr.join("");
@@ -89,5 +105,13 @@ export class AhorcadoComponent implements OnInit {
     } else {
       this.intentos++;
     }
+  }
+
+  reset(){
+    this.getPalabra();
+    this.palabraOculta = "";
+    this.intentos = 0;
+    this.gano = false;
+    this.perdio = false;
   }
 }
