@@ -1,0 +1,36 @@
+
+.contenedor{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    border: 0;
+    padding: 0;
+}
+
+.pregunta{
+    padding-top: 25px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.botones{
+    width: 300px; 
+    height: 150px; 
+    font-size: 45px; 
+    font-weight: bold; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    padding: 5px;
+}
+
+.botones:hover{
+    text-decoration: underline;
+}
+
+.carta-mostrada{
+    width: 350px;
+    height: 480px;
+    padding: 10px;
+}

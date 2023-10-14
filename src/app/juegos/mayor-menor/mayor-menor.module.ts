@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MayorMenorRoutingModule } from './mayor-menor-routing.module';
 import { MayorMenorComponent } from './mayor-menor.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MayorMenorComponent } from './mayor-menor.component';
   ],
   imports: [
     CommonModule,
-    MayorMenorRoutingModule
+    MayorMenorRoutingModule,
+    FormsModule
   ]
 })
 export class MayorMenorModule { }

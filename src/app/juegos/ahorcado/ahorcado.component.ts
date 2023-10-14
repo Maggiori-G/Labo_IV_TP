@@ -30,6 +30,7 @@ export class AhorcadoComponent implements OnInit {
     "l",
     "m",
     "n",
+    "ñ",
     "o",
     "p",
     "q",
