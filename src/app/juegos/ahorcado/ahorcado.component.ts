@@ -102,7 +102,7 @@ export class AhorcadoComponent implements OnInit {
 
   existeLetra(letra:string) {
     if (this.palabra.indexOf(letra) >= 0) {
-      console.log("La letra existe" + letra);
+      // console.log("La letra existe" + letra);
     } else {
       this.intentos++;
     }

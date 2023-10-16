@@ -13,7 +13,7 @@ export class MenuComponent {
     this.items = [
         {
             label: 'Home',
-            icon: 'pi pi-fw pi-file',
+            icon: 'pi pi-fw pi-home',
             routerLink: 'home'
         },
         {
@@ -50,7 +50,7 @@ export class MenuComponent {
         {
             label: 'Quit',
             icon: 'pi pi-fw pi-power-off',
-            
+            routerLink: '/login'
         }
     ];
 }

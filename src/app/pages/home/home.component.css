@@ -1,0 +1,45 @@
+.contenedor{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.contenedor-card{
+    justify-content: center !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 450px;
+    padding-top: 100px;
+}
+
+.carta{
+    border-radius: 10px; 
+    height: 550px; 
+    width: 70%;  
+    justify-content: center; 
+    align-items: center; 
+    border: 2px solid; 
+    display: flex; 
+    flex-direction: row;
+    
+}
+
+.imagen{
+    width: 400px; 
+    height: 400px; 
+    margin: 50px
+}
+
+.titulo{
+    font-size: 65px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.descripcion{
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

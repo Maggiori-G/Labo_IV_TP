@@ -1,0 +1,30 @@
+.contenedor{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.titulo{
+    font-weight: bold;
+    color: red;
+    font-size: 41px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.descripcion{
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.foter{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.titulo-footer{
+    text-decoration: underline;
+    color: green;
+    font-size: 25px;
+}
+
